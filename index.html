@@ -167,7 +167,7 @@
               if (endTimeCell.textContent === '') {
                 endTimeCell.textContent = endTimeString;
               }
-            }, 4 * 60000); // 4 minutes in milliseconds
+            }, 2 * 60000); // 4 minutes in milliseconds
           });
         }
 
@@ -198,11 +198,11 @@
         // Initial generation of report
         generateReport(currentBatch); // Starting with batch 1
 
-        // Generate new batch every 5 minutes
+        // Generate new batch every 2 minutes
         setInterval(function() {
           currentBatch++;
           generateReport(currentBatch);
-        }, 5 * 60 * 1000); // 5 minutes in milliseconds
+        }, 2 * 60 * 1000); // 2 minutes in milliseconds
     </script>
 </body>
 </html>
